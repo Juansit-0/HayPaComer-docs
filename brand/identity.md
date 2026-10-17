@@ -1,85 +1,99 @@
-# Visual Identity Brief
+# Visual Identity Brief, v3 "Pa' comer"
+
+Version 3 replaces "Copper Counter" (v1 and v2). The name, the H-and-tray mark, the voice, and the principle "numbers first" stay. What changes is the scale and the colour: the identity moves from a quiet kitchen tool to a poster you hang in the kitchen.
 
 ## 01 Identity strategy statement
 
-HayPaComer's identity should feel like a well-made kitchen tool: honest, legible, and warm, with numbers as the hero. Every visual decision comes from measurement: grams, dates, and minutes should be the largest, clearest elements on any surface, the way a scale display is the point of a scale. The palette stays warm like a real kitchen rather than green like wellness marketing or dark like AI software, and the type system mixes humanist warmth for reading with a monospaced voice for data. Nothing glows, nothing floats, nothing promises more than it measures.
+HayPaComer answers the question every Colombian household asks in front of the fridge: "¿qué hay pa' comer?". Version 3 makes that question the brand. The identity speaks at poster scale, in condensed capitals, over flat fields of colour taken from the food of Nariño: papa amarilla, tomate de árbol, cilantro and mora. Inside the app the posters become chapters: every tab owns one of those colours, and the data on it (grams, days, degrees) is the largest thing on the screen. The references are Nike for colour and type energy and Apple for restraint and motion; the result must still look like a kitchen in Pasto, not a sneaker shop.
 
 ## 02 Logo direction
 
-**Primary direction:** Wordmark-first identity. "HayPaComer" set as a sturdy humanist wordmark with an optional tray-and-scale integration: the crossbar of the "H" doubles as a weighing tray platform, and the three beats (Hay / Pa' / Comer) allow a stacked lockup for square spaces. A display variant may use "Hay Pa' Comer" with the apostrophe as a small copper accent.
+**Primary mark (kept):** the H whose crossbar is a weighing tray, with the small round weight above it. It is a scale and a letter at once.
 
-**Character:** Trustworthy and approachable, like a kitchen appliance you have owned for years. Confident but never corporate.
+**Wordmark (new):** `HAYPACOMER` set in Anton, uppercase, tracking -0.01em, one word. The apostrophe version "HAY PA' COMER" is reserved for the question headline, never for the logo.
 
-**Style notes:** Constructed, slightly condensed letterforms for small screens; friendly but not rounded; high contrast between strokes; the mark must stay legible at app-icon size.
+**On colour fields:**
 
-**What to avoid:** Fork-and-knife cliches, fridge outlines, leaves or earth symbols, circuit-board motifs, gradient orbs, glowing AI sparkles, playful script.
+| Field | Mark and wordmark | Tray and weight |
+| --- | --- | --- |
+| Arroz (white) | Tinta | Copper |
+| Papa amarilla | Tinta | Tinta |
+| Tomate de árbol | Arroz | Arroz |
+| Cilantro | Arroz | Arroz |
+| Mora | Arroz | Papa amarilla |
 
-**Three references:**
+Copper appears in the mark only on arroz. The mark is never outlined, never placed on a photograph without a solid field behind it, and never recoloured outside this table.
 
-- **Teenage Engineering** - borrow the utilitarian confidence: a wordmark that looks engineered, with product-design rigor and zero decoration.
-- **OXO kitchen tools** - borrow the ergonomic warmth: functional objects designed to be understood instantly and held comfortably.
-- **Muji** - borrow the calm restraint: generous whitespace, honest materials, muted warmth, no shouting.
+**Wordmark as loader:** the wordmark is the loader, at full viewport width, as on the /zeroz brand site. The letters fill from the bottom like a scale reading rising; when loading ends, the destination chapter's colour opens from the bottom edge (shutter) and the app appears. The fill is real progress (locale texts, session, first data), not a timer.
 
-## 03 Color palette
+**Avoid:** fork-and-knife, fridge outlines, leaves, circuit boards, gradients, glows, sparkles, script type.
 
-**Primary color - Copper Clay `#B45309`:** Warm metal and food at once; the color of a well-used pan and of a tool that works. It carries calls to action and brand moments without the urgency of pure red.
+**References:** Nike (condensed capitals and the brand at poster scale on flat colour); the 60fps "FS 60P" watch site (the product name huge behind the object, the object exploding into its parts on scroll); /zeroz by Otsuka (the wordmark is the first and only thing on the loading screen).
 
-**Secondary colors:**
+## 03 Colour palette
 
-- **Deep Ink `#292524`** - text and structure; a warm near-black that reads softer than pure black on kitchen screens.
-- **Sand `#FAF4EA`** - background and surfaces; kitchen-paper warmth instead of clinical white.
-- **Paprika `#C2410C`** - alerts and highlights (door open, expiring soon); warm warning instead of cold red.
-- **Olive `#4D7C0F`** - positive measured states (fresh, enough, done); a kitchen-herb green used sparingly on data, never as a wellness theme.
+Every field colour comes with its assigned text colour. Contrast is AA for body text on every pair.
 
-**Color personality:** Warm utility: appetite, reliability, and honesty. It sits closer to a market kitchen than to an appliance showroom.
+| Role | Name | Hex | Text on it |
+| --- | --- | --- | --- |
+| Ground | Arroz | `#fbfbf8` | Tinta |
+| Surface | Blanco | `#ffffff` | Tinta |
+| Ink | Tinta | `#121212` | Arroz |
+| Chapter | Papa amarilla | `#f3c443` | Tinta |
+| Chapter | Tomate de árbol | `#c8432a` | Arroz |
+| Chapter | Cilantro | `#2f7a4a` | Arroz |
+| Chapter | Mora | `#4b1f2e` | Arroz |
+| Action | Cobre | `#a8481f` | Blanco |
+| Soft ink | Piedra | `#55534e` | Secondary text on arroz and blanco only |
+| Step | Mesón | `#efeee9` | Tinta; a tone step between surfaces, never a border |
 
-**Usage rules:** Copper for primary actions and brand accents; Ink for text; Sand for surfaces; Paprika only for attention states; Olive only for positive data. Never gradient Copper into Paprika, and never place Paprika and Olive text directly near each other without neutral space.
+**States** keep their meaning and are told apart by words and shape, not only colour: expired and door open use tomate; at risk uses papa amarilla with tinta text; fresh, enough and done use cilantro; under review uses mora.
 
-**Palette type:** Warm analogous (copper, paprika, sand) anchored by ink, with olive as the single functional complement.
+**Rules:** one chapter colour per screen; neighbouring chapters differ in lightness as well as hue; no tints, no gradients, no shadows at rest; copper only on the primary action of a screen.
+
+**Palette type:** four flat produce fields on a white rice ground, anchored by tinta, with copper as the single action colour.
 
 ## 04 Typography
 
-**Primary typeface - Bricolage Grotesque (display):** A warm, slightly idiosyncratic grotesque for the wordmark and headlines. It has character without costume: humane curves, sturdy structure, and enough personality to make numbers feel friendly.
+**Display: Anton.** Condensed grotesque capitals for headlines, chapter titles and the large numbers of the landing. Tracking -0.005em, leading 0.9, at most two lines.
 
-**Secondary typeface - Hanken Grotesk (UI and body):** A humanist sans with excellent legibility at small sizes for apps, docs, and marketing paragraphs.
+**Text and data: Hanken Grotesk.** 400 for reading, 600 for emphasis, `font-variant-numeric: tabular-nums` for every gram, date, degree and price. IBM Plex Mono is retired: numbers are now the text face at large size, not a monospace label.
 
-**Data typeface - IBM Plex Mono (numbers and labels):** Grams, dates, timers, and tool traces are set in a monospaced face so figures align like an instrument readout: 842 g, 650 g, 192 g used.
+**Hierarchy (five steps):**
 
-**Type personality:** Kitchen-tool honesty: legible, warm, and numeric. Reading fonts feel human; data fonts feel measured.
+| Step | Use | Size |
+| --- | --- | --- |
+| Poster | Landing headlines, loader | clamp(64px, 12vw, 200px), Anton |
+| Head | Screen and chapter titles | clamp(40px, 6vw, 88px), Anton |
+| Figure | The number of a tile (842 g, 4,2 °C) | clamp(40px, 5vw, 72px), Hanken 700 |
+| Body | Reading, controls | 17px to 19px, Hanken 400 |
+| Small | Secondary notes | 14px, Hanken 500 |
 
-**Usage hierarchy:** Headlines in Bricolage Grotesque, subheads and body in Hanken Grotesk, data, labels, and timers in IBM Plex Mono with tabular numerals.
+**Avoid:** monospace labels, uppercase letter-spaced captions, italics, a third family.
 
-**Avoid:** Rounded toy fonts, futuristic techno faces, scripts, ultra-thin display weights, and any type that prioritizes fashion over legibility at 7 a.m.
+## 05 Imagery and photography
 
-## 05 Imagery and photography style
+**Aesthetic:** real food and real kitchens, documentary, shot flat or from above, on plain grounds. The landing uses openly licensed photographs of Nariño produce and markets (credited in the footer) until the project has its own photographs of the fridge and the scale.
 
-**Overall aesthetic:** Warm documentary realism: a real kitchen on a real Tuesday. Natural light, slight grain, close attention to objects as they are, including half-used containers and tape labels.
+**Product:** the hardware (door sensor, temperature probe, ESP32, scale) is drawn in code as flat shapes in the palette, never faked as a photograph.
 
-**Subject matter:** Hands weighing ingredients; the scale display in focus; open fridge shelves with real packaging; leftovers in glass containers; a market list on a phone; the tray, the sensor, the cables as honest hardware.
-
-**Color treatment:** Warm and natural; sand and copper tones; avoid heavy filters, keep whites slightly warm.
-
-**What to avoid:** Perfect produce flat lays, spotless white showroom kitchens, stock-photo smiling families, glowing AI renders, neon gradients, and anything that looks like it was never used.
+**Avoid:** stock lifestyle photos of people smiling at fridges, renders with glows, AI-generated food.
 
 ## 06 Iconography and illustration
 
-**Style:** Line icons with a 2 px stroke and slightly rounded joints; functional first, with occasional kitchen-specific detail (tray, scale, tag, pot, thermometer).
-
-**Weight:** Regular, consistent across the set; filled variants only for active states.
-
-**Personality:** Utilitarian with a friendly hand: clear at 16 px, never decorative for its own sake.
+Filled, flat, 2px corners, drawn on a 24px grid in tinta or arroz. Icons appear only next to a word. Foods in the app are shown as solid circles and pills in their real colour (a tomato is tomate, an egg is arroz with a papa yolk), the same language as the drawn hardware.
 
 ## 07 Design principles
 
-- **Numbers first:** Grams, dates, and minutes are the largest elements on any screen. If a design decision hides the measurement, the decision is wrong.
-- **Tool, not toy:** Controls look touchable and predictable; every state is legible; nothing animates for decoration.
-- **Warm utility:** Sand surfaces and copper accents keep function humane. Utility does not have to be cold or clinical.
-- **Honest states:** Unknown, stale, and under review are shown plainly, never hidden behind optimism. The interface says "I do not know" without shame.
+- **Numbers first.** On every screen the largest element is a measurement. Copy explains the number; it never competes with it.
+- **One chapter per screen.** Each tab owns one produce colour; the colour tells you where you are before you read.
+- **Motion explains change.** Things move when something changed or loaded: a number rises like a scale, a shelf slides when food leaves, a chapter opens like a shutter. Nothing moves to decorate, and everything respects reduced motion.
+- **Honest states.** Unknown, estimated and stale data say so in words. Skeletons show the shape of what is coming, never fake content.
 
 ## 08 Brand expressions
 
-- **Social media:** One number per post ("192 g rescued", "40 s with the door open") over warm kitchen photography; captions in the direct voice, no hashtag noise.
-- **Website and app:** Sand background, ink text, copper primary actions, monospaced data; dense information with air around numbers; the live panel uses olive and paprika for states.
-- **Repository and docs:** README badges and diagrams in the same palette; architecture diagrams use ink lines on sand with copper highlights for measured data.
-- **Presentations and demo:** Numbers as hero slides (842 g to 650 g), real photos, no stock imagery; the demo script reads like a kitchen story, not a feature list.
-- **Hardware and labels:** Copper-accented tray labels and a small laser-etched wordmark on the electronics enclosure; the physical system should look like it belongs to the brand.
+- **App tabs and chapter colours:** Ahora is papa amarilla, Nevera is cilantro, Mercado is tomate de árbol, Números is mora, Chef is cobre, Ajustes and the inbox are arroz. The colour fills the screen header band and the active tab; data tiles stay on blanco for legibility.
+- **Landing:** colour chapters at full bleed, the question headline at poster scale, the kit exploding into its parts on scroll, one live calculator for the food a household saves in a month.
+- **Loader:** the wordmark filling like a scale reading, then the chapter shutter.
+- **Social:** a single produce field per post with one number in Anton ("842 G").
+- **Presentations:** the same chapters, one idea per slide, numbers in Anton.
