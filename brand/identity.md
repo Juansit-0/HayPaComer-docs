@@ -10,7 +10,7 @@ HayPaComer answers the question every Colombian household asks in front of the f
 
 **Primary mark (kept):** the H whose crossbar is a weighing tray, with the small round weight above it. It is a scale and a letter at once.
 
-**Wordmark (new):** `HAYPACOMER` set in Anton, uppercase, tracking -0.01em, one word. The apostrophe version "HAY PA' COMER" is reserved for the question headline, never for the logo.
+**Wordmark (new):** `HAYPACOMER` set in Fraunces 900 (soft, wonky cut), uppercase, one word. The apostrophe version "HAY PA' COMER" is reserved for the question headline, never for the logo.
 
 **On colour fields:**
 
@@ -55,7 +55,7 @@ Every field colour comes with its assigned text colour. Contrast is AA for body 
 
 ## 04 Typography
 
-**Display: Anton.** Condensed grotesque capitals for headlines, chapter titles and the large numbers of the landing. Tracking -0.005em, leading 0.9, at most two lines.
+**Display: Fraunces.** A heavy serif at its largest optical size with the soft, slightly wonky cut, so headlines read like an engraved poster or a market label. Replaces Anton (2026-10-18) to match the engraved 3D fridge. Uppercase for screen titles, leading 0.92, at most two lines.
 
 **Text and data: Hanken Grotesk.** 400 for reading, 600 for emphasis, `font-variant-numeric: tabular-nums` for every gram, date, degree and price. IBM Plex Mono is retired: numbers are now the text face at large size, not a monospace label.
 
@@ -63,8 +63,8 @@ Every field colour comes with its assigned text colour. Contrast is AA for body 
 
 | Step | Use | Size |
 | --- | --- | --- |
-| Poster | Landing headlines, loader | clamp(64px, 12vw, 200px), Anton |
-| Head | Screen and chapter titles | clamp(40px, 6vw, 88px), Anton |
+| Poster | Landing headlines, loader | clamp(64px, 12vw, 200px), Fraunces 900 |
+| Head | Screen and chapter titles | clamp(40px, 6vw, 88px), Fraunces 900 |
 | Figure | The number of a tile (842 g, 4,2 °C) | clamp(40px, 5vw, 72px), Hanken 700 |
 | Body | Reading, controls | 17px to 19px, Hanken 400 |
 | Small | Secondary notes | 14px, Hanken 500 |
@@ -81,7 +81,9 @@ Every field colour comes with its assigned text colour. Contrast is AA for body 
 
 ## 06 Iconography and illustration
 
-Filled, flat, 2px corners, drawn on a 24px grid in tinta or arroz. Icons appear only next to a word. Foods in the app are shown as solid circles and pills in their real colour (a tomato is tomate, an egg is arroz with a papa yolk), the same language as the drawn hardware.
+**Engraving.** The fridge, its foods and every scene are drawn like an engraving: flat colour fills crossed by ink hatching where the light falls away, on cream paper, with the food as the only saturated colour. Scenes the 3D cannot show (markets, kitchens, people) come from public-domain engravings and plates, treated with the same ink, and are always credited.
+
+Icons: filled, flat, 2px corners, drawn on a 24px grid in tinta or arroz. Icons appear only next to a word. Foods in the app are shown as solid circles and pills in their real colour (a tomato is tomate, an egg is arroz with a papa yolk), the same language as the drawn hardware.
 
 ## 07 Design principles
 
@@ -95,5 +97,5 @@ Filled, flat, 2px corners, drawn on a 24px grid in tinta or arroz. Icons appear 
 - **App tabs and chapter colours:** Ahora is papa amarilla, Nevera is cilantro, Mercado is tomate de árbol, Números is mora, Chef is cobre, Ajustes and the inbox are arroz. The colour fills the screen header band and the active tab; data tiles stay on blanco for legibility.
 - **Landing:** colour chapters at full bleed, the question headline at poster scale, the kit exploding into its parts on scroll, one live calculator for the food a household saves in a month.
 - **Loader:** the wordmark filling like a scale reading, then the chapter shutter.
-- **Social:** a single produce field per post with one number in Anton ("842 G").
-- **Presentations:** the same chapters, one idea per slide, numbers in Anton.
+- **Social:** a single produce field per post with one number in Fraunces ("842 G").
+- **Presentations:** the same chapters, one idea per slide, numbers in Fraunces.
