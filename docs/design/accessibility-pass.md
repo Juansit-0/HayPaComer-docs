@@ -23,3 +23,21 @@ Sign in, Now, Fridge with the add food sheet, Market, Numbers, Chef, and Setting
 - The add food sheet moves focus inside when it opens and returns it to "Add to fridge" when Escape closes it.
 - No horizontal scroll at 375 px, and no button, input, or chip under 44 px.
 - Every visible text comes from the translations (`WebTextsTest`), so screen readers read the chosen language; `html lang` follows it.
+
+# Engraving restyle pass (2026-10-20)
+
+Checked against the engraving restyle of the landing and the app screens with axe-core 4.10.2: Now, Fridge, Market, Numbers, Chef, Settings, and the inbox sheet at 1440 px, Now and Fridge at 390 px, and the signed-out landing at both widths.
+
+## Found and fixed
+
+| Problem | Where | Fix |
+|---|---|---|
+| Inactive step names 3.77:1 on paper | Landing, "How it works" slider | Solid ink brown `#5c554c` (6.07:1) instead of ink at 55% |
+| Text 3.56:1 on tomato red | Landing calculator label and explanation | The chapter red deepens to `#a8361f` and its text is solid paper (4.97:1) |
+| Dish titles were `h3` right after the page `h1` | Now, Chef dish cards | Dish titles are `h2` |
+
+## Confirmed
+
+- No axe violations on any checked screen after the fixes.
+- Sheets (inbox, add food) share the card language: paper, a 2 px ink edge, and a hard offset shadow; unread alerts add a tomato edge as well as the word, so the state is not told by colour alone.
+- Secondary buttons and chips are outlined in ink and stay at 44 px or more.
