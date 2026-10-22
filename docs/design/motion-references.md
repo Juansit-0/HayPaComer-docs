@@ -26,3 +26,9 @@ The account is on the free tier (two code retrievals per day). Both retrievals w
 - Filter: fractal noise at a base frequency of 0.012 with 3 octaves, a displacement of about 90 px, then a 1.5 px blur.
 - The radius grows to 1.3 times the distance to the farthest corner with a cubic ease-in-out over 2.4 s; reduced motion shortens it to 300 ms.
 - It pauses when off screen or when the tab is hidden, and announces the new slide politely.
+
+## Ink Reveal (2026-10-22)
+
+| Component | Author | License | Used for |
+|---|---|---|---|
+| [Ink Reveal](https://21st.dev/ryanonline1234/ink-reveal) (21st id 39360) | ryanonline1234, [ease-atlas](https://github.com/ryanonline1234/ease-atlas) | MIT | `app/story/ink-reveal.js`: the fragment shader is theirs (fbm front, fibres that wick ahead of it, pooled rim, paper grain); the plain-module port, one shared context per page created on first use, and the landing wiring (fridge vignette, kit medallions, How it works swaps) are ours |
