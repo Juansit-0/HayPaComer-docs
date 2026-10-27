@@ -132,8 +132,9 @@ Rows are at least 56 px tall.
 - The section changes direction with the tab order.
 - Reduced motion keeps every state, without the travel.
 
-## Open questions
+## Decisions
 
-- Should Números rank household members ("0 g rescatados, 80 g botados")? It risks shaming someone inside the household.
-- Should the panel re-list the inventory, given the stage on the left already is the inventory? Or should it only hold decisions (cook, use, buy)?
-- Should there be a dark theme? Today the app is light only.
+- **Números:** celebrates the household instead of ranking members. Each person sees only their own figures, in positive terms.
+- **Nevera panel:** keeps listing the inventory as light rows (glyph, name, grams, expiry). Actions appear when a row is chosen, and on phones the panel is the main view.
+- **Dark theme:** "night paper" is created in this round and follows the system setting.
+- **Tokens v3:** the two design systems are unified first, before the new top bar.
