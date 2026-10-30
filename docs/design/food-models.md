@@ -14,20 +14,20 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Food | Status | What the model shows |
 |---|---|---|
 | Potato (papa pastusa) | Done | Smooth pale tuber with eyes; three varieties in the market |
-| Papa criolla | To add | Small round yellow potatoes in a little pile |
+| Creole potato (papa criolla) | Done | Small round yellow potatoes in a little pile |
 | Tomato (chonto) | Done | Lobed red fruit, sepals and stalk |
 | Onion (cabezona) | Done | Golden bulb drawn to a dry tip, root tuft |
-| Cebolla larga | To add | Long white stem turning into green leaves, tied in a bunch |
+| Green onion (cebolla larga) | Done | Three white stems going pale green into hollow leaves, tied with a red band |
 | Carrot | Done | Tapering root with three fronds, bunched side by side |
 | Arracacha | To add | Pale yellow knobbly root |
 | Ulluco | To add | Small glossy yellow and pink tubers |
 | Oca | Done | Short ridged tuber, rose, yellow or ivory |
 | Yuca | To add | Long bark-brown root with a white cut end |
-| Green peas (arveja) | To add | A few open pods with peas |
-| Corn (mazorca) | To add | Ear with rows of kernels and husk peeled back |
+| Green peas (arveja) | Done | Two pods split open with the peas in a row, one still closed |
+| Corn (mazorca) | Done | Ear with rows of kernels, husk peeled back and a tuft of silk |
 | Cabbage (repollo) | To add | Round head with wrapped outer leaves |
 | Lettuce | To add | Open head of ruffled leaves |
-| Cilantro | To add | Bunch of thin stems with lacy leaves |
+| Cilantro | Done | Bunch of thin stems with lobed leaves, tied at the roots |
 | Garlic | To add | White bulb with cloves and a dry tip |
 | Pepper (pimentón) | To add | Glossy red pepper with four lobes and a stalk |
 | Ahuyama | To add | Wedge of squash, green rind and orange flesh |
@@ -41,12 +41,12 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Avocado | Done | Pear-shaped, pebbled dark skin |
 | Tree tomato (tomate de árbol) | Done | Pointed red egg, sepals, short stalk |
 | Lulo (naranjilla) | Done | Round orange fruit with dry calyx |
-| Orange | To add | Round, dimpled peel, small leaf at the stem |
-| Lime (limón) | To add | Small green oval, one cut in half |
-| Mango | To add | Kidney-shaped, green to red blush |
+| Orange | Done | Round, dimpled peel, small leaf at the stem |
+| Lime (limón) | Done | Small green oval, one cut in half showing its segments |
+| Mango | Done | Kidney-shaped, sun-red on top going to yellow-green |
 | Papaya | To add | Long fruit, one half cut showing seeds |
 | Granadilla | To add | Orange shell, curled stalk |
-| Mora (blackberries) | To add | Little tub of dark berries |
+| Blackberries (mora) | Done | Clear tub of dark berries, each a knot of drupelets |
 | Apple | To add | Red apple with stalk and leaf |
 | Pineapple | To add | Diamond-patterned body with a crown of leaves |
 
@@ -56,7 +56,7 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 |---|---|---|
 | Milk | Done | Carton with coloured bands and cap |
 | Cheese (queso campesino) | Done | Round of fresh white cheese with a slice cut out |
-| Queso doble crema | To add | Yellower block in its plastic |
+| Double cream cheese (queso doble crema) | Done | Yellower block in clear plastic crimped at the ends, blue band |
 | Yogurt | Done | Cup with foil lid |
 | Butter | Done | Block half out of its paper |
 | Kumis | To add | Bottle with a white body and red cap |
@@ -67,9 +67,9 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Food | Status | What the model shows |
 |---|---|---|
 | Chicken breast | Done | Breast on a white tray |
-| Whole chicken / thighs | To add | Thighs with skin on a tray |
+| Chicken thighs (pernil) | Done | Skin-on drumsticks with the bone showing, on a tray |
 | Ground beef | Done | Mound on a tray |
-| Beef steak (carne de res) | To add | Flat red cut with a fat edge |
+| Beef steak (carne de res) | Done | Flat marbled red cut with its edge of fat, on a tray |
 | Pork chop | To add | Pink chop with the bone |
 | Cuy | To add | Prepared cuy on a platter (a dish of Nariño) |
 | Chorizo | To add | Linked sausages |
@@ -105,4 +105,4 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 
 ## Next step
 
-The 24 foods marked **Done** are the whole catalog today (`V4__seed_food_catalog.sql`). The others need a migration that adds them to `food_catalog` (with es-CO and en names) and a model each in `app/engrave.js`. Suggested order, by how often they end up in a Pasto fridge: papa criolla, cebolla larga, cilantro, lime, orange, queso doble crema, beef steak, whole chicken, mora, mango, arveja, mazorca, then the rest.
+The first 24 foods come from `V4__seed_food_catalog.sql`; the next 15 from `V53__more_foods.sql` (the 12 above plus tree tomato, oca and lulo, which had models but no catalog row), which adds them to `food_catalog` with shelf life by zone, a reference price in COP per kg and their es-CO and en names. Every model can be reviewed together at `app/dev/foods.html` (`?only=Lime,Corn` to pick some). The rest follow the same steps, a row in a migration and a model in `app/engrave.js`, in this order: arracacha, ulluco, yuca, garlic, pepper, ahuyama, papaya, granadilla, kumis, chorizo, trout, panela, then the others.
