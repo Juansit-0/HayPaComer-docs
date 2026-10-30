@@ -13,10 +13,10 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 
 | Food | Status | What the model shows |
 |---|---|---|
-| Potato (papa pastusa) | Done | Smooth pale tuber with eyes; three varieties in the market |
+| Potato (papa pastusa) | Done | Big pale tuber with a scatter of dark eyes; three varieties in the market |
 | Creole potato (papa criolla) | Done | Small round yellow potatoes in a little pile |
 | Tomato (chonto) | Done | Lobed red fruit, sepals and stalk |
-| Onion (cabezona) | Done | Golden bulb drawn to a dry tip, root tuft |
+| Onion (cabezona) | Done | Round golden bulb with dark veins from root to neck, a dry twisted neck and a root tuft |
 | Green onion (cebolla larga) | Done | Three white stems going pale green into hollow leaves, tied with a red band |
 | Carrot | Done | Root swelling from its point to a rounded shoulder, faint rings, a feathery top from the crown, bunched side by side |
 | Arracacha | Done | Two pale yellow knobbly roots and the purple knob of their crown |
@@ -84,10 +84,10 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Pasta | Done | Box with a window onto spaghetti |
 | Bread (pan de sal) | Done | Round rolls with a scored top |
 | Arepa | Done | Disc with griddle marks |
-| Black beans | Done | Glass jar |
-| Lentils | Done | Glass jar |
-| Red beans (fríjol) | Done | Glass jar of red-brown beans with a paper label |
-| Mote (maíz pelado) | Done | Clear bag of large white kernels with a yellow band, tied at the neck |
+| Black beans | Done | Glass jar of black beans with a paper label and a copper lid |
+| Lentils | Done | Glass jar of small flat lentils with a paper label and a copper lid |
+| Red beans (fríjol) | Done | Glass jar of red-brown beans with a paper label and a copper lid |
+| Mote (maíz pelado) | Done | Clear sack of large white kernels with a yellow sticker, its neck twisted and tied |
 | Oats (avena) | Done | Round cardboard tub with a printed band and a lid |
 | Panela | Done | Two round cakes half wrapped in dry plantain leaf, tied with string |
 
