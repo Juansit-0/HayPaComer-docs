@@ -18,15 +18,15 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Tomato (chonto) | Done | Lobed red fruit, sepals and stalk |
 | Onion (cabezona) | Done | Golden bulb drawn to a dry tip, root tuft |
 | Green onion (cebolla larga) | Done | Three white stems going pale green into hollow leaves, tied with a red band |
-| Carrot | Done | Tapering root with three fronds, bunched side by side |
+| Carrot | Done | Root swelling from its point to a rounded shoulder, faint rings, a feathery top from the crown, bunched side by side |
 | Arracacha | Done | Two pale yellow knobbly roots and the purple knob of their crown |
 | Ulluco | Done | Small glossy yellow and pink tubers in a pile |
 | Oca | Done | Short ridged tuber, rose, yellow or ivory |
 | Yuca | Done | Long bark-brown root with a white cut end and the line of its core |
 | Green peas (arveja) | Done | Two pods split open with the peas in a row, one still closed |
 | Corn (mazorca) | Done | Ear with rows of kernels, husk peeled back and a tuft of silk |
-| Cabbage (repollo) | To add | Round head with wrapped outer leaves |
-| Lettuce | To add | Open head of ruffled leaves |
+| Cabbage (repollo) | Done | Tight pale head in darker outer leaves that flare at the top |
+| Lettuce | Done | Ruffled leaves opening from the heart in two rings |
 | Cilantro | Done | Bunch of thin stems with lobed leaves, tied at the roots |
 | Garlic (ajo) | Done | White bulb pinched into cloves, a dry tip and one loose clove |
 | Pepper (pimentón) | Done | Glossy red pepper with four lobes at its foot and a bent stalk |
@@ -47,8 +47,8 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Papaya | Done | Half a papaya on its back, orange flesh round a hollow of black seeds |
 | Granadilla | Done | Orange shell freckled pale, curled stalk and a dry bract |
 | Blackberries (mora) | Done | Clear tub of dark berries, each a knot of drupelets |
-| Apple | To add | Red apple with stalk and leaf |
-| Pineapple | To add | Diamond-patterned body with a crown of leaves |
+| Apple | Done | Red apple with a dip at the stalk and one leaf |
+| Pineapple | Done | Body of diamond eyes and a crown of long stiff leaves |
 
 ## Dairy and eggs
 
@@ -70,8 +70,8 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Chicken thighs (pernil) | Done | Skin-on drumsticks with the bone showing, on a tray |
 | Ground beef | Done | Mound on a tray |
 | Beef steak (carne de res) | Done | Flat marbled red cut with its edge of fat, on a tray |
-| Pork chop | To add | Pink chop with the bone |
-| Cuy | To add | Prepared cuy on a platter (a dish of Nariño) |
+| Pork chop | Done | Pale pink chop round the bone, rim of fat, on a tray |
+| Cuy | Done | Roasted cuy on a platter with small yellow potatoes (a dish of Nariño) |
 | Chorizo | Done | A curved chain of links tied at the ends |
 | Tuna | Done | Tin with label and rims |
 | Trout (trucha) | Done | Whole fish on its side, olive back, pink stripe and dark spots |
@@ -86,9 +86,9 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Arepa | Done | Disc with griddle marks |
 | Black beans | Done | Glass jar |
 | Lentils | Done | Glass jar |
-| Red beans (fríjol) | To add | Jar of red-brown beans |
-| Mote (maíz pelado) | To add | Bag of large white corn kernels |
-| Oats (avena) | To add | Round cardboard tub |
+| Red beans (fríjol) | Done | Glass jar of red-brown beans with a paper label |
+| Mote (maíz pelado) | Done | Clear bag of large white kernels with a yellow band, tied at the neck |
+| Oats (avena) | Done | Round cardboard tub with a printed band and a lid |
 | Panela | Done | Two round cakes half wrapped in dry plantain leaf, tied with string |
 
 ## Drinks, condiments and prepared food
@@ -98,11 +98,11 @@ A model shows what the food is at a glance from a metre away: its silhouette fir
 | Orange juice | Done | Carton with a slice drawn on |
 | Soy sauce | Done | Dark bottle |
 | Soup | Done | Pot with a lid |
-| Ají | To add | Small jar of red-green sauce |
-| Oil | To add | Clear bottle of yellow oil |
-| Coffee | To add | Bag of ground coffee |
-| Leftovers (sobras) | To add | Glass container with a lid and food inside |
+| Ají | Done | Small jar of red sauce with green herbs, dark lid |
+| Oil | Done | Tall clear bottle of golden oil, green label and cap |
+| Coffee | Done | Dark stand-up pouch, top folded, pale label and valve |
+| Leftovers (sobras) | Done | Glass container with a blue snap lid, rice and stew inside |
 
 ## Next step
 
-The first 24 foods come from `V4__seed_food_catalog.sql`; the next 15 from `V53__more_foods.sql` (the 12 above plus tree tomato, oca and lulo, which had models but no catalog row), which adds them to `food_catalog` with shelf life by zone, a reference price in COP per kg and their es-CO and en names. Every model can be reviewed together at `app/dev/foods.html` (`?only=Lime,Corn` to pick some). `V54__andean_foods.sql` adds the next 12: arracacha, ulluco, yuca, garlic, pepper, squash, papaya, granadilla, kumis, chorizo, trout and panela. The rest follow the same steps, a row in a migration and a model in `app/engrave.js`, in this order: red beans, mote, oats, oil, coffee, ají, cabbage, lettuce, apple, pineapple, pork chop, cuy, then leftovers.
+Every food on this list now has its model and its catalog row: 24 from `V4__seed_food_catalog.sql`, 15 from `V53__more_foods.sql`, 12 from `V54__andean_foods.sql` and 13 from `V55__pantry_and_kitchen_foods.sql`, each with shelf life by zone, a reference price in COP per kg and its es-CO and en names. Every model can be reviewed together at `app/dev/foods.html` (`?only=Lime,Corn` to pick some). A new food follows the same steps: a row in a migration, a model in `FOODS` (and `DETAILED` when grams change how many pieces show) in `app/engrave.js`, and a flat glyph in `SHAPES` (`app/stage.js`) with its class in `app/app.css`.
