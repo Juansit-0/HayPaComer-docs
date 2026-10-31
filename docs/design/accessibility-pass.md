@@ -73,3 +73,31 @@ Checked against the motion system of plan v4 (virtual scroll story, route timeli
 - VoiceOver on Mac and iOS: captions read in order, the hold button announced, skip lands on the answer.
 - Keyboard only through a whole visit: story, sign up, Fridge with a sheet, hold to discard.
 - A real iPhone and a mid-range Android: no rubber band or URL bar jump in the story, inertia, pinch zoom, the hold with a finger.
+
+# Redesign close (2026-10-31)
+
+Checked against plan v5 (header, tab bar, contextual fridge, transitions, swipes, microinteractions, kitchen stage, empty states) and the later landing stages, with axe-core 4.10.3 and headless Chrome on the mock: Now, Fridge, Market, Numbers, Chef and Settings, the add food sheet, the notifications and the account menu open, and the signed-out landing, at 1440 px with the 3D kitchen forced on and at 390 px, in light and dark.
+
+## Found and fixed
+
+| Problem | Where | Fix |
+|---|---|---|
+| Palette chips kept a white background with light text in dark mode (axe marks text over the 3D canvas as incomplete, so only a direct contrast check found it) | Fridge, chips to drag food onto a shelf | Chips use the theme surface and text colours |
+| The page shifted on load (layout shift 0.38): the header first drew as the signed-out page, then as the app, and the fridge column slid to its place | Every signed-in screen, worst on Numbers | App mode is set before the first paint when a session exists; the first layout of a visit lands without the column animation |
+| The credit of a CC BY-SA photo was hidden in the desktop dish rows | Now, dish rows next to the 3D kitchen | The credit shows under the picture in rows too |
+| A request could wait forever when the server did not answer | Every screen | Every attempt ends after 75 s, a sleeping server is retried for up to 150 s, and a status note tells what is happening, then offers "Try again" |
+| Food titles wider than their column pushed the kit pictures out of line | Landing, "Four parts" at about 1000 px | Fixed column width and a title that wraps and hyphenates |
+
+## Confirmed
+
+- No axe violations in any of the 40 checks (10 screens and states, at two widths, in light and dark), after the fixes.
+- Frames: p95 16.7 to 16.8 ms on all six screens at 1440 px with the 3D kitchen, and at 390 px with the CPU slowed four times; no long tasks once a screen has settled. Loading a screen with the 3D kitchen costs one task of 120 to 230 ms (building the kitchen and compiling its shaders), once per visit.
+- Route changes keep p95 16.7 ms; their layout shifts all happen within 500 ms of the tap, so they count as a response to input (layout shift 0 for the visitor).
+- Keyboard: skip link, home, the five sections, theme, notifications, settings, account, then the 3D fridge; the account menu opens with Enter, its language, sound and sign out are reachable with Tab, and Escape closes it and returns focus to its button; the notifications open with focus inside and Escape returns it to the bell; arrow keys never change the section.
+- Reduced motion: the same text on every screen as with motion, and no running animations 6.5 s after load.
+
+## To check by hand
+
+- iPhone and Safari: the bottom tab bar over the safe area, swipes between sections, the account popover, dragging the fridge door with a finger, the film grain.
+- VoiceOver: the server status note is read when it appears.
+
