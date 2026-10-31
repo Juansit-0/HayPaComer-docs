@@ -28,6 +28,10 @@ ESP32 sketches that speak the event protocol (`docs/event-protocol.md`) with the
 - A reading is stable after 1 s within 800 counts (about 2 g at 428 counts per gram); a new stable value that moved at least 2000 counts is sent at once, and a heartbeat every 5 s keeps the backend sample fresh for tare and calibration.
 - Register the device with kind `ESP32_SCALE`, tare the empty scale from the app, place a known weight (for example 500 g), and calibrate.
 
+## Enclosures
+
+The printed cases for both nodes, the reed switch mounts and the probe cable clips are in `hardware/enclosures/` of the firmware repository, with print settings and assembly steps in its README.
+
 ## Flashing
 
 1. Register the device in the API (`POST /api/v1/households/{h}/devices`, kind `ESP32_DOOR_TEMP`) and copy the `apiKey` shown once.

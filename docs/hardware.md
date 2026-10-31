@@ -40,7 +40,7 @@ These are needed to present the final demo but are usually already owned or cost
 | Power strip and extension cord | Fridge-area power for the 5 V supply and laptop | Useful whenever the demo table is far from an outlet |
 | Mounting tape, velcro, and cable ties | Reed switch, magnet, probe, and cable strain relief | Double-sided foam tape works on fridge plastic |
 | Known weight or kitchen scale (optional) | Calibrating the load cell quickly | A 500 g reference or any kitchen scale is enough |
-| Project box (optional) | Hiding the electronics neatly | Improves the look; not required for function |
+| Printed enclosures | Hold both nodes, the door switch and the probe cable | See "Printed enclosures" below |
 | Backup video of the demo (recommended) | Protection against hardware or network failure on stage | Record the full acceptance flow once the system works |
 
 ## Software and secrets for the demo
@@ -68,6 +68,21 @@ Power and safety rules:
 - Use the external 5 V supply, never a loose battery inside the fridge enclosure; add strain relief so door movement never pulls on the load cell wiring.
 - Common ground between ESP32, HX711, and sensors; keep the load cell cable away from the door hinge to reduce mechanical noise.
 - The load cell handles the tray, not the whole shelf; mount the cell between a fixed base and the tray with the arrow pointing in the direction of the applied weight.
+
+## Printed enclosures
+
+Both nodes, the door switch and the probe cable have printed parts, designed in OpenSCAD in the firmware repository under
+`hardware/enclosures/` (sources, ready STL and 3MF files, renders and a README with print settings and assembly):
+
+- **Door node box**: the ESP32 on rails, the buzzer perfboard, a cable gland with strain relief, the LED behind a thin window; it sticks
+  outside the fridge with foam tape or two 10 x 3 mm magnets.
+- **Scale platform**, 180 x 180 mm: the load cell between the base and a top plate, an overload stop 2 mm under the plate, the ESP32 and the
+  HX711 in a bay; a washable plate sits on top, so food never touches the print.
+- **Reed switch mounts** with spacers of 1 to 5 mm, and **cable clips** with a 1 mm bridge so the door still seals over the probe cable.
+
+Print in PETG (PLA turns brittle in the cold and creeps under the scale's load), without supports, on a 220 x 220 mm bed; print
+`fit_test.scad` first and measure the purchased parts before the final print. Extra hardware: M5 x 10 and M4 x 12 screws (two each), two
+10 x 3 mm neodymium discs, 3M VHB foam tape, four rubber feet, four silicone bumpers and a washable plate up to 17 cm.
 
 ## Buying notes
 
