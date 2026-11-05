@@ -449,7 +449,7 @@ erDiagram
 |---|---|---|---|
 | `agent:memory:{householdId}` | Hash | none | Preferences, usual quantities, accepted dishes, decisions; editable by the household |
 | `agent:conv:{conversationId}` | Stream | 7 d | Chef chat messages |
-| `agent:convs:{userId}` | Sorted set | 7 d | Conversation index by last activity |
+| `agent:convs:{userId}:{householdId}` | Sorted set | 7 d | Conversation index by last activity, per household |
 | `agent:run:{runId}` | Hash | 30 d | Run status, specialist, steps and budget used |
 | `agent:trace:{runId}` | Stream | 30 d | Plan, tool call, and observation steps with arguments and results |
 | `agent:pending:{confirmationId}` | Hash | 10 min | Write proposed by the agent awaiting human confirmation |
