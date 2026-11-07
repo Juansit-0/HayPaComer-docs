@@ -2,6 +2,34 @@
 
 All notable changes to HayPaComer. Each step of the roadmap was one pull request; the full list is in [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
+## [1.2.0] - 2026-11-06
+
+The redesign, the 3D fridge, and a full test of the app against the real backend. Release notes in [`docs/releases/v1.2.0.md`](docs/releases/v1.2.0.md).
+
+### Interface (Juan Camilo López Díaz)
+
+- A public landing that tells the story of a market Sunday in Pasto, from 1876 to today, in 3D with engraved drawings and a held fridge door.
+- A signed-in app redrawn on paper and ink, with a night theme, a top bar and phone tabs, an inbox under the bell, quick portions with undo, and press and hold for lasting actions.
+- A 3D fridge built from each household's shape, with drag and drop, a drawn version for reduced motion, and models for every food in the catalog.
+- Account recovery pages, invitation links, member management, weighing and timers while cooking, cold chain review, and sensors in Settings.
+
+### Backend and data (Juan Camilo López Díaz, Jenifer Urbano)
+
+- Fridge shapes with room by volume, moving food between parts, and the Challenger CR 121 as the demo fridge.
+- A catalog of everyday and Andean foods, with a check that a new food is food before it joins.
+- Password proof from the browser, with a transparent upgrade for older accounts.
+- Server messages, live alerts, reports, the weekly digest, and recipe steps in Spanish and English.
+- Mailed links that open web pages, shareable invitation links, and cart history.
+
+### Quality
+
+- Twelve agents tested every screen and the 24 patterns against the real stack; 13 batches of fixes, each with a check rerun at the end.
+- Fixed lost updates between parallel requests, conversations shared across households, sensor events counted twice, and the offline planner failing from the second chat message.
+
+### Enclosures (Juan Camilo López Díaz)
+
+- Printable enclosures for both sensor nodes, door switch mounts, and probe cable clips.
+
 ## [1.1.0] - 2026-10-09
 
 Plan v2: Spanish first, settings in the database, expiry with logic, a redesigned interface, and production deployment. Release notes in [`docs/releases/v1.1.0.md`](docs/releases/v1.1.0.md).
